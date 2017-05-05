@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "The use of protocol in Electron"
+date: 2016-11-03 20:35:45 -0800
+excerpt_separator: <!--more-->
 ---
+
 ### Electron 的 protocol 接口使用介绍
 
 #### 1. **protocol 初步阅览**
@@ -35,6 +38,7 @@ paul-demo/
 
 ```
 
+<!--more-->
 
 ``main.js`` 文件内容如下
 ```js
@@ -102,7 +106,7 @@ function localProtocol()
 ```
 
 在 ``paul-demo`` 目录下，命令行运行 ``electron .`` 启动程序。实际效果如下  
-![]({{ site.baseurl }}/images/Electron1.png)
+![]({{ site.baseurl }}/assets/img/Electron1.png)
 
 点击上图的 ``Hello, World`` 将在外部浏览器中打开链接
 
@@ -239,10 +243,10 @@ exports.run = (action, ...arguments) => {
 
 
 在 ``paul-demo`` 目录下，命令行运行 ``electron .`` 启动程序。实际效果如下  
-![]({{ site.baseurl }}/images/Electron2.png)
+![]({{ site.baseurl }}/assets/img/Electron2.png)
 
 点击上图的 ``dispatcher`` 效果如下图  
-![]({{ site.baseurl }}/images/Electron3.png)
+![]({{ site.baseurl }}/assets/img/Electron3.png)
 
 > 以上是用 protocol 接口实现一个调度转发器实例
 

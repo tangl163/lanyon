@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "The first using of Electron"
+date: 2016-11-03 20:35:45 -0800
+excerpt_separator: <!--more-->
 ---
 
 ### Electron 第一次调研报告
@@ -26,6 +28,7 @@ demo/
 └── index.html
 ```
 
+<!--more-->
 
 package.json 文件内容如下
 
