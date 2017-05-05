@@ -15,7 +15,7 @@ excerpt_separator: <!--more-->
 
 ```
 paul-demo/
-├── assets
+├── public
 │   └── icon.png（程序图标）
 ├── package.json
 ├── main.js
@@ -58,7 +58,7 @@ app.on('ready', () => {
 /* 创建主窗口 */
 function createWindow()
 {
-    var image = nativeImage.createFromPath('./assets/icon.png');
+    var image = nativeImage.createFromPath('./public/icon.png');
 
     var options = {
         width: 350,
@@ -106,7 +106,7 @@ function localProtocol()
 ```
 
 在 ``paul-demo`` 目录下，命令行运行 ``electron .`` 启动程序。实际效果如下  
-![]({{ site.baseurl }}/assets/img/Electron1.png)
+![]({{ site.baseurl }}/public/img/Electron1.png)
 
 点击上图的 ``Hello, World`` 将在外部浏览器中打开链接
 
@@ -119,7 +119,7 @@ function localProtocol()
 
 ```
 paul-demo/
-├── assets
+├── public
 │   └── icon.png（程序图标）
 ├── module
 │   ├── controllers
@@ -150,7 +150,7 @@ app.on('ready', () => {
 /* 创建主窗口 */
 function createWindow()
 {
-    var image = nativeImage.createFromPath('./assets/icon.png');
+    var image = nativeImage.createFromPath('./public/icon.png');
 
     var options = {
         width: 350,
@@ -243,10 +243,10 @@ exports.run = (action, ...arguments) => {
 
 
 在 ``paul-demo`` 目录下，命令行运行 ``electron .`` 启动程序。实际效果如下  
-![]({{ site.baseurl }}/assets/img/Electron2.png)
+![]({{ site.baseurl }}/public/img/Electron2.png)
 
 点击上图的 ``dispatcher`` 效果如下图  
-![]({{ site.baseurl }}/assets/img/Electron3.png)
+![]({{ site.baseurl }}/public/img/Electron3.png)
 
 > 以上是用 protocol 接口实现一个调度转发器实例
 
