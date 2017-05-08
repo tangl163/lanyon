@@ -27,7 +27,7 @@ defaults:
 title: "Paul on Programming"
 description: "Here lies Balin, son of Fundin, Lord of Moria."
 paginate: 5
-baseurl: ''
+baseurl: '/'
 
 # About/contact
 
