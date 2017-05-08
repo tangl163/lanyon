@@ -2,15 +2,32 @@
 permalink: pretty
 
 
-# Config
+# Configure
 timezone: Asia/Shanghai
 
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+#disqus: tangl163
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+#google_analytics:
+
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      excerpt_separator: "<!--more-->"
+
 # Setup
-title: Paul
-tagline: 'on Programming'
-description: 'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-baseurl: 'https://tangl163.github.io'
+title: "Paul on Programming"
+description: "Here lies Balin, son of Fundin, Lord of Moria."
 paginate: 5
+baseurl: ''
 
 # About/contact
 author:
@@ -18,19 +35,9 @@ author:
   url: https://twitter.com/mdo
   email: markdotto@gmail.com
 
-# Custom vars
-version:             1.0.0
+redcarpet:
+  extensions: ["fenced_code_blocks", "no_intra_emphasis", "tables", "autolink", "strikethrough"]
 
-# Conversion
-markdown:    kramdown
-highlighter: rouge
-lsi:         false
-
-kramdown:
-  auto_ids:       true
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  input:          GFM
-  hard_wrap:      false
-  footnote_nr:    1
+webrick:
+  headers:
+    Cache-Control: false

@@ -1,8 +1,6 @@
 ---
-layout: post
-title: "The use of protocol in Electron"
+title: "The useing of protocol in Electron"
 date: 2016-11-03 20:35:45 -0800
-excerpt_separator: <!--more-->
 ---
 
 ### Electron 的 protocol 接口使用介绍
@@ -22,7 +20,7 @@ paul-demo/
 └── index.html
 ```
 
-``package.json`` 文件内容如下
+`package.json` 文件内容如下
 
 ```json
 {
@@ -35,12 +33,11 @@ paul-demo/
         "electron": "^1.4.1"
     }
 }
-
 ```
 
 <!--more-->
 
-``main.js`` 文件内容如下
+`main.js` 文件内容如下
 ```js
 const electron = require('electron');
 const app = electron.app;
@@ -84,10 +81,9 @@ function localProtocol()
         if (error) console.log('register protocol fail');
     });
 }
-
 ```
 
-``index.html`` 文件内容如下（**注意 a 标签里面的地址**）
+`index.html` 文件内容如下（**注意 a 标签里面的地址**）
 
 ```html
 <!DOCTYPE html>
@@ -102,13 +98,12 @@ function localProtocol()
     </div>
 </body>
 </html>
-
 ```
 
-在 ``paul-demo`` 目录下，命令行运行 ``electron .`` 启动程序。实际效果如下  
+在 `paul-demo` 目录下，命令行运行 `electron .` 启动程序。实际效果如下  
 ![]({{ site.baseurl }}/public/img/Electron1.png)
 
-点击上图的 ``Hello, World`` 将在外部浏览器中打开链接
+点击上图的 `Hello, World` 将在外部浏览器中打开链接
 
 > 以上为 protocol 的初步应用
 
@@ -131,7 +126,7 @@ paul-demo/
 └── index.html
 ```
 
-``main.js`` 文件内容如下
+`main.js` 文件内容如下
 ```js
 const electron = require('electron');
 const app = electron.app;
@@ -191,10 +186,9 @@ function dispatcher()
         if (error) console.log('register protocol fail');
     });
 }
-
 ```
 
-``index.html`` 文件内容如下（**注意 a 标签里面的地址**）
+`index.html` 文件内容如下（**注意 a 标签里面的地址**）
 
 ```html
 <!DOCTYPE html>
@@ -209,10 +203,9 @@ function dispatcher()
     </div>
 </body>
 </html>
-
 ```
 
-``module/controllers/demo.js`` 文件内容下
+`module/controllers/demo.js` 文件内容下
 ```js
 /**
  * 控制器构造方法
@@ -238,14 +231,13 @@ exports.run = (action, ...arguments) => {
     var controller = new Demo(action, arguments);
     return controller[action]();
 };
-
 ```
 
 
-在 ``paul-demo`` 目录下，命令行运行 ``electron .`` 启动程序。实际效果如下  
+在 `paul-demo` 目录下，命令行运行 `electron .` 启动程序。实际效果如下  
 ![]({{ site.baseurl }}/public/img/Electron2.png)
 
-点击上图的 ``dispatcher`` 效果如下图  
+点击上图的 `dispatcher` 效果如下图  
 ![]({{ site.baseurl }}/public/img/Electron3.png)
 
 > 以上是用 protocol 接口实现一个调度转发器实例

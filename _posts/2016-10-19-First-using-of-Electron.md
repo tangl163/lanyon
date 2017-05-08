@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "The first using of Electron"
 date: 2016-11-03 20:35:45 -0800
-excerpt_separator: <!--more-->
 ---
 
-### Electron 第一次调研报告
+### 初识 Electron
 
 1. Electron 是什么？  
 Electron 是由 GitHub 开发的开源框架，框架使用网页作为用户界面，框架中集成了 Node.js 和 Chromium 浏览器。 所以我们可以把 Electron 看成是一个由 JavaScript 控制的浏览器。
@@ -15,9 +13,11 @@ Electron 是由 GitHub 开发的开源框架，框架使用网页作为用户界
 
 3. 创建第一个 Electron 应用程序  
     ● 首先安装 [Node.js](https://nodejs.org/en/)  
-    ● 在命令行运行 `npm install electron -g`
-    ● 在任意一个文件夹（我们的文件夹名叫 **_demo_** ）下分别建立 "package.json" "main.js" "index.html" 这三个文件
+    ● 在命令行运行 `npm install electron -g`  
+    ● 在任意一个文件夹（我们的文件夹名叫 **_demo_** ）下分别建立 "package.json" "main.js" "index.html" 这三个文件  
 
+
+<!--more-->
 
 目录结构如下
 
@@ -27,8 +27,6 @@ demo/
 ├── main.js
 └── index.html
 ```
-
-<!--more-->
 
 package.json 文件内容如下
 
