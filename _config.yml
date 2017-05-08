@@ -30,10 +30,6 @@ paginate: 5
 baseurl: ''
 
 # About/contact
-author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
 
 redcarpet:
   extensions: ["fenced_code_blocks", "no_intra_emphasis", "tables", "autolink", "strikethrough"]
