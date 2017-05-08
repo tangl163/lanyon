@@ -9,10 +9,6 @@ layout: default
   {{ content }}
 </div>
 
-<div class="comments">
-    {% include disqus.html disqus_identifier=page.disqus_identifier %}
-</div>
-
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
@@ -28,3 +24,8 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<div class="comments">
+    {% include disqus.html disqus_identifier=page.disqus_identifier %}
+</div>
+
