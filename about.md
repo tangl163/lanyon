@@ -5,24 +5,11 @@ title: About
 
 # About this blog
 ------
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Hi, I’m Paul, a Web developer. This is my personal blog where I write programming-related stuff. I focus my attention on C and php. I also write other stuffs on this blog.  
 
-There are currently two themes built on Poole:
+Besides programming, I like football very much. I usually play football with my friends once a week. Watching and talking football match on weekeds is the best pleasure of me.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+This blog is based on the template theme of [Jekyll](https://github.com/poole/lanyon). Thanks to the author!
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+Feel free to leave comments or contact me with my email: _cnjsw001(at)gmail.com_, especially if you spot an error.
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
